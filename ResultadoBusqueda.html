@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<meta http-equiv="Pragma" content="no-cache">
+		<script type="text/javascript" src="CodigoJavaScript.js"></script>
+		<title>Noticias Bisontes - Resultado de búsqueda</title>
+	<head>
+	<body>
+		<!--Parte superior de la página-->
+		<div id="header">
+		
+			<img style="float:left" src="Images/Logo.png" height="200" onClick="location.href = 'index.html'"> </img>
+			<br> <br> <br>
+			<div id="clima">
+				<img id="imagenClima" alt="X" height="80" src="Images/clima/cloudy.png" align="left"> </img>
+				<p id="tempActual" style="margin:05px;font-size:25px;font-family:georgia,serif"> 30º C </p>
+				<p id="MinMax" style="margin:05px;font-family:georgia,serif"> Mín 18º C, Máx 32º C </p>
+			</div>
+			<br> <br> <br>
+			<div id="fechaActual" style="font-style:italic"> Sábado, 07 de Septiembre de 2013 </div>
+			<div id="buscador" class="buscar">
+			
+				<input id="textBuscador" type="text" size="50" style="font-style:italic;height:30px"
+				value="Escriba aqu&iacute; su b&uacute;squeda"
+				onFocus="if (this.value=='Escriba aqu&iacute; su b&uacute;squeda')
+						this.value=''"
+				onBlur="this.value='Escriba aqu&iacute; su b&uacute;squeda'"> </input>
+				<button id="botonBuscador" class="botones"> Buscar </button>
+				
+			</div>
+			<div id="login" class="login">
+				<form>
+					<input id="textLogin" type="text" value="Username"
+					onFocus="if (this.value=='Username')
+							this.value=''"
+					onBlur="this.value='Username'"> </input>
+					<input id="textPass" type="text" value="Password"
+					onFocus="if (this.value=='Password')
+							this.value=''"
+					onBlur="this.value='Password'"> </input>
+					<button id="botonLogin" class="botones" onClick="showDiv()">Login</button>
+					<button id="botonRegister" class="botones" onClick="location.href = 'Register.html'">Register</button>
+				</form>
+			</div>
+			<div id="logined" class="logined">
+				<div>¡Bienvenido, 
+				<a href="UserPage.html" id="actualuser" name="actualuser">Nombre de usuario</a>
+				<img src="logout.png" height="15" width="auto" onClick="hideDiv()"> </img>
+				</div>
+			</div>
+		</div>
+
+		<!--Cuerpo principal de la página-->
+		<div id="resultados" style="padding-top:20px;">
+		
+			<div style="font-family:Georgia;font-size:180%;padding:15px;border-top:02px solid white;margin-top:10px"> Resultados de la Búsqueda</div>
+		
+			<div id="resultado1" class="resultado" onClick="location.href = 'Noticia.html'">
+				<img id="imagen1" alt="X" height="90" width="90" style="float:left;padding-right:10px"> </img>
+				<div id="titulo1" style="font-size:110%;font-family:Georgia;font-weight:bold">Titulo</div>
+				<div id="descripcion1" style="font-size:100%;padding-top:10px">acvkmdslk sdvjnsdlkjvn sdkn dsnv xdlvn sdfv</div>
+			</div>
+			<div id="resultado2" class="resultado" onClick="location.href = 'Noticia.html'">
+				<img id="imagen2" alt="X" height="90" width="90" style="float:left;padding-right:10px"> </img>
+				<div id="titulo2" style="font-size:110%;font-family:Georgia;font-weight:bold">Titulo</div>
+				<div id="descripcion1" style="font-size:100%;padding-top:10px">acvkmdslk sdvjnsdlkjvn sdkn dsnv xdlvn sdfv</div>
+			</div>
+			<div id="resultado3" class="resultado" onClick="location.href = 'Noticia.html'">
+				<img id="imagen3" alt="X" height="90" width="90" style="float:left;padding-right:10px"> </img>
+				<div id="titulo3" style="font-size:110%;font-family:Georgia;font-weight:bold">Titulo</div>
+				<div id="descripcion1" style="font-size:100%;padding-top:10px">acvkmdslk sdvjnsdlkjvn sdkn dsnv xdlvn sdfv</div>
+			</div>
+			<div id="resultado4" class="resultado" onClick="location.href = 'Noticia.html'">
+				<img id="imagen4" alt="X" height="90" width="90" style="float:left;padding-right:10px"> </img>
+				<div id="titulo4" style="font-size:110%;font-family:Georgia;font-weight:bold">Titulo</div>
+				<div id="descripcion1" style="font-size:100%;padding-top:10px">acvkmdslk sdvjnsdlkjvn sdkn dsnv xdlvn sdfv</div>
+			</div>
+			<div id="resultado5" class="resultado" onClick="location.href = 'Noticia.html'">
+				<img id="imagen5" alt="X" height="90" width="90" style="float:left;padding-right:10px"> </img>
+				<div id="titulo5" style="font-size:110%;font-family:Georgia;font-weight:bold">Titulo</div>
+				<div id="descripcion1" style="font-size:100%;padding-top:10px">acvkmdslk sdvjnsdlkjvn sdkn dsnv xdlvn sdfv</div>
+			</div>
+				
+		</div>
+			
+		<!--Filtros de búsqueda-->
+		<div id="filtros" class="filtrosBusqueda">
+			<form>
+				<div style="font-family:Georgia;font-size:150%;font-style:italic;padding-bottom:10px">Filtros</div>
+				
+				<div style="font-weight:bold;padding-top:05px;padding-bottom:05px">Fechas</div>
+				Desde: <input id="fechaDesde" type="text" style="width:50"></input>
+				Hasta: <input id="fechaHasta" type="text" style="width:50"></input>
+				<br>
+				<div style="font-weight:bold;padding-top:10px;padding-bottom:05px">Título de la noticia </div>
+				<input id="tituloNoticiaBusqueda" type="text" style="width:250"></input>
+				<input type="button" value="Filtrar" style="margin-top:10px"/>
+			</form>
+		</div>
+			
+		<!--Parte inferior de la página-->
+		<div id="parteinferior" class="parteInferior">
+			<div align="right">
+				<table>
+					<tr> <td> <a href> Quiénes somos </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Publicidad </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Contacto </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle">
+				<table>
+					<tr> <td> Secciones: </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Local </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Nacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Internacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Cultura </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Espectáculos </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle" style="padding:10px">
+				Noticiero Bisontes es un sitio web, producto como proyecto final de la materia de Bases
+				de Datos para Multimedia, de la carrera de Licenciado en Multimedia y Animación Digital,
+				impartida en la Facultad de Ciencias Físico-Matemáticas, en la Universidad Autónoma de 
+				Nuevo León.
+			</div>
+			
+			<div align="left" style="margin-top:35px;">
+				<table> <tr>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Facultad de Ciencias Físico Matemáticas </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Av. Universidad s/n. Ciudad Universitaria, San Nicolás de los Garza, Nuevo León, C.P. 66451 </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Tel 83-29-40-30 </td> </tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

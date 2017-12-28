@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<script language="javascript" type="text/javascript" src="CodigoJavaScript.js"></script>
+		<meta http-equiv="Pragma" content="no-cache">
+		<title>Noticias Bisontes - Editar Noticia</title>
+	<head>
+	<body style="background-image:url('back_2.png')">
+		<!--Parte superior de la página-->
+		<div id="header">
+		
+			<div id="logined" class="logined" style="display:block">
+				<div>¡Bienvenido, 
+				<a href="UserPage.html" id="actualuser" name="actualuser">Nombre de usuario</a>
+				<img src="logout.png" height="15" width="auto" onClick="hideDiv()"> </img>
+				</div>
+			</div>
+			
+		</div>
+
+		<!--Cuerpo principal de la página-->
+		<div id="editarSecciones" style="width:680px;margin:0 auto;padding:50px">
+			<div style="font-size:120%;float:right">Editar Secciones</div><br><br>
+			<div style="float:right;">Mínimo 5 secciones, máximo 9 secciones</div>
+
+			<form name="seccionesAmodificar" id="seccionesAmodificar" style="padding:40px;text-align:center">
+				<input type="text" style="margin:02px" value="Local"/><br>
+				<input type="text" style="margin:02px" value="Nacional"/><br>
+				<input type="text" style="margin:02px" value="Internacional"/><br>
+				<input type="text" style="margin:02px" value="Cultura"/><br>
+				<input type="text" style="margin:02px" value="Espectáculos"/><br>
+
+				<input type="button" id="Agregar" value="Agregar" onClick="AgregarSeccion()" style="display:inline;margin-top:20px"/>
+				<input type="button" id="Eliminar" value="Eliminar" onClick="EliminarSeccion()" style="display:inline"/>
+				<br>
+				<input type="submit" value="Guardar" style="margin-top:20px;display:inline"></input>
+				<input type="button" value="Cancelar" style="display:inline" onClick="location.href='index.html'"/>
+				<input type="reset" value="Limpiar" style="display:inline"></input>
+			</form>
+				
+		</div>
+		
+	</body>
+</html>

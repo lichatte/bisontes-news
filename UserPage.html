@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<meta http-equiv="Pragma" content="no-cache">
+		<script type="text/javascript" src="CodigoJavaScript.js"></script>
+		<title>Noticias Bisontes - Usuario</title>
+	<head>
+	<body>
+		<!--Parte superior de la página-->
+		<div id="header">
+		
+			<img style="float:left" src="Images/Logo.png" height="200" onClick="location.href = 'index.html'"> </img>
+			<br> <br> <br>
+			<div id="clima">
+				<img id="imagenClima" alt="X" height="80" src="Images/clima/cloudy.png" align="left"> </img>
+				<p id="tempActual" style="margin:05px;font-size:25px;font-family:georgia,serif"> 30º C </p>
+				<p id="MinMax" style="margin:05px;font-family:georgia,serif"> Mín 18º C, Máx 32º C </p>
+			</div>
+			<br> <br> <br>
+			<div id="fechaActual" style="font-style:italic"> Sábado, 07 de Septiembre de 2013 </div>
+			
+			<div id="logined" class="logined" style="display:block">
+				<div>¡Bienvenido, 
+				<a href="UserPage.html" id="actualuser" name="actualuser">Nombre de usuario</a>
+				<img src="logout.png" height="15" width="auto" onClick="hideDiv()"> </img>
+				</div>
+			</div>
+			
+		</div>
+	
+		<!--Cuerpo principal de la página-->
+		<div name="userpage" class="userInfo">
+			<div style="position:relative;float:right;font-family:Georgia;font-size:150%;padding:20px">
+			Información Personal</div>
+						
+			<form style="padding:90px 10px">	
+				<table align="center">
+				<tr>
+					<td align="right">Nombre(s)</td>
+					<td align="left"><input type="text"></input></td>
+				</tr>
+				<tr>
+					<td align="right">Apellido Paterno</td>
+					<td align="left"><input type="text"></input></td>
+				</tr>
+				<tr>
+					<td align="right">Apellido Materno</td>
+					<td align="left"><input type="text"></input></td>
+				</tr>
+				<tr>
+					<td align="right">Fecha de Nacimiento</td>
+					<td align="left"><input type="date" value="1970-01-01"></input></td>
+				</tr>
+				<tr>
+					<td align="right">Sexo</td>
+					<td align="left"><input type="radio" name="genero" id="masc"></input><label for="masc">Masculino </label>
+								<input type="radio" name="genero" id="fem"></input><label for="fem">Femenino </label></td>
+				</tr>
+				<tr>
+					<td align="right">Lugar</td>
+					<td align="left"><input type="text"></input></td>
+				</tr>
+				</table>
+				<input type="submit" value="Guardar cambios"> </input>
+			</form>
+		</div>
+		
+		<div name="userpage2" class="userInfo">
+			<div style="position:relative;float:right;font-family:Georgia;font-size:150%;padding:20px">
+				Información de Usuario</div>
+			
+			<form style="padding:90px 10px">	
+				<table align="center">
+				<tr>
+					<td align="right">Nombre de usuario</td>
+					<td align="left"><input type="text"></input></td>
+				</tr>
+				<tr>
+					<td align="right">Contraseña anterior</td>
+					<td align="left"><input type="password"></input></td>
+				</tr>
+				<tr>
+					<td align="right">Nueva contraseña</td>
+					<td align="left"><input type="password"></input></td>
+				</tr>
+				<tr>
+					<td align="right">Reescribir nueva contraseña</td>
+					<td align="left"><input type="password"></input></td>
+				</tr>
+				</table>
+				<input type="submit" value="Guardar cambios"> </input>
+			</form>
+		</div>
+		
+		<div name="userpage3" class="userInfo">
+			<div style="position:relative;float:right;font-family:Georgia;font-size:150%;padding:20px">
+				Cambiar Imagen de Perfil</div>
+				
+			<div class="image">
+				<img src="corgi.jpg" height="200" width="200" alt="User's avatar" id="userAvatar"></img>
+				<img src="Edit.png" id="editbutton" height="25" title="Cambiar imagen"></img>
+			</div>
+		</div>
+		
+		<!--Parte inferior de la página-->
+		<div id="parteinferior" class="parteInferior">
+			<div align="right">
+				<table>
+					<tr> <td> <a href> Quiénes somos </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Publicidad </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Contacto </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle">
+				<table>
+					<tr> <td> Secciones: </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Local </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Nacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Internacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Cultura </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Espectáculos </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle" style="padding:10px">
+				Noticiero Bisontes es un sitio web, producto como proyecto final de la materia de Bases
+				de Datos para Multimedia, de la carrera de Licenciado en Multimedia y Animación Digital,
+				impartida en la Facultad de Ciencias Físico-Matemáticas, en la Universidad Autónoma de 
+				Nuevo León.
+			</div>
+			
+			<div align="left" style="margin-top:35px;">
+				<table> <tr>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Facultad de Ciencias Físico Matemáticas </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Av. Universidad s/n. Ciudad Universitaria, San Nicolás de los Garza, Nuevo León, C.P. 66451 </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Tel 83-29-40-30 </td> </tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<meta http-equiv="Pragma" content="no-cache">
+		<script type="text/javascript" src="CodigoJavaScript.js"></script>
+		<title>Noticias Bisontes - Editar Noticia</title>
+	<head>
+	<body style="background-image:url('back_2.png');text-align:center">
+		<!--Parte superior de la página-->
+		<div id="header">
+		
+			<div id="logined" class="logined" style="display:block">
+				<div>¡Bienvenido, 
+				<a href="UserPage.html" id="actualuser" name="actualuser">Nombre de usuario</a>
+				<img src="logout.png" height="15" width="auto" onClick="hideDiv()"> </img>
+				</div>
+			</div>
+			
+		</div>
+
+		<!--Cuerpo principal de la página-->
+		<div id="noticia" style="width:680px;margin:0 auto;">
+			<div style="padding-top:50px;padding-bottom:10px;float:right;font-size:120%">Editar/Nueva Noticia</div>
+			<form align="middle">
+				<input type="text" id="tituloSeccion" class="topic" style="clear:both;margin-top:10px;padding:10px;font-size:150%;text-align:center" value="seccion"></input>
+				
+				<input type="text" id="tituloNoticia" style="margin-top:10px;padding-left:20px;font-family:Georgia;font-weight:bold;" value="Título de la noticia"></input><br>
+				<input type="text" id="autorNoticia" style="margin-top:10px;padding-left:20px;font-weight:bold;" value="Autor de la noticia"></input>
+				
+				<div class="photo">
+					<img src="Edit.png" id="editPhoto" height="37" title="Cambiar imagen"></img>
+					<img alt="X" height="350" width="600" style="padding:10px" id="PhotoNews"> </img>
+				</div>
+				<br>Ingrese aquí el texto de la noticia
+				<textarea id="textoNoticia" style="clear:both;padding:10px;text-align:justify" cols="80" rows="30">Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus. Morbi lorem ante, malesuada in mollis nec, auctor nec massa. Aenean tempus dui eget felis blandit at fringilla urna ultrices. Suspendisse feugiat, ante et viverra lacinia, lectus sem lobortis dui, ultricies consectetur leo mauris at tortor. Nunc et tortor sit amet orci consequat semper. Nulla non fringilla diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac magna non augue porttitor scelerisque ac id diam. Mauris elit velit, lobortis sed interdum at, vestibulum vitae libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis ligula ut ipsum mattis viverra. Nulla a libero metus. Integer gravida tempor metus eget condimentum. Integer eget iaculis tortor. Nunc sed ligula sed augue rutrum ultrices eget nec odio. Morbi rhoncus, sem laoreet tempus pulvinar, leo diam varius nisi, sed accumsan ligula urna sed felis. Mauris molestie augue sed nunc adipiscing et pharetra ligula suscipit. In euismod lectus ac sapien fringilla ut eleifend lacus venenatis.
+				</textarea>
+				
+				<input type="submit" value="Guardar" style="margin-top:20px;display:inline"></input>
+				<input type="button" value="Cancelar" style="display:inline" onClick="location.href='index.html'"/>
+				<input type="reset" value="Limpiar" style="display:inline"></input>
+			</form>
+				
+		</div>
+		
+	</body>
+</html>
