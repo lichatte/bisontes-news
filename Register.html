@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<meta http-equiv="Pragma" content="no-cache">
+		<script type="text/javascript" src="CodigoJavaScript.js"></script>
+		<title>Noticias Bisontes - Registrarse</title>
+	<head>
+	<body style="background-image:url('back_2.png');">
+		
+		<!--Cuerpo Principal de la página-->
+		<div id="login2">
+			<h2><span class="fontawesome-lock"></span>Registrar Usuario</h2>
+			<form action="javascript:void(0);" method="POST">
+				<fieldset>
+					<p><label for="email">Correo electrónico</label></p>
+					<p><input type="email" id="email" value="mail@address.com" 
+					onBlur="if(this.value=='')this.value='mail@address.com'" 
+					onFocus="if(this.value=='mail@address.com')this.value=''"></p>
+					
+					<p><label for="password">Nombre de Usuario</label></p>
+					<p><input type="text" id="username" value="usuario" 
+					onBlur="if(this.value=='')this.value='usuario'" 
+					onFocus="if(this.value=='usuario')this.value=''"></p>
+					
+					<p><label for="password">Contraseña</label></p>
+					<p><input type="password" id="password" value="contraseña" 
+					onBlur="if(this.value=='')this.value='password'" 
+					onFocus="if(this.value=='password')this.value=''"></p>
+
+					<div style="text-align:center">
+						<input style="display:inline;" type="submit" value="Registrar">
+						<input style="display:inline;" type="button" value="Cancelar" onClick="location.href='index.html'"/>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		
+		<!--Parte inferior de la página-->
+		<div id="parteinferior" class="parteInferior">
+			<div align="right">
+				<table>
+					<tr> <td> <a href> Quiénes somos </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Publicidad </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Contacto </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle">
+				<table>
+					<tr> <td> Secciones: </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Local </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Nacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Internacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Cultura </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Espectáculos </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle" style="padding:10px">
+				Noticiero Bisontes es un sitio web, producto como proyecto final de la materia de Bases
+				de Datos para Multimedia, de la carrera de Licenciado en Multimedia y Animación Digital,
+				impartida en la Facultad de Ciencias Físico-Matemáticas, en la Universidad Autónoma de 
+				Nuevo León.
+			</div>
+			
+			<div align="left" style="margin-top:35px;">
+				<table> <tr>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Facultad de Ciencias Físico Matemáticas </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Av. Universidad s/n. Ciudad Universitaria, San Nicolás de los Garza, Nuevo León, C.P. 66451 </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Tel 83-29-40-30 </td> </tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

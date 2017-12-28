@@ -1,0 +1,196 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<meta http-equiv="Pragma" content="no-cache">
+		<script type="text/javascript" src="CodigoJavaScript.js"></script>
+		<title>Noticias Bisontes - Noticia</title>
+	</head>
+	<body>
+		<!--Parte superior de la página-->
+		<div id="header">
+		
+			<img style="float:left" src="Images/Logo.png" height="200" onClick="location.href = 'index.html'"> </img>
+			<br> <br> <br>
+			<div id="clima">
+				<img id="imagenClima" alt="X" height="80" src="Images/clima/cloudy.png" align="left"> </img>
+				<p id="tempActual" style="margin:05px;font-size:25px;font-family:georgia,serif"> 30º C </p>
+				<p id="MinMax" style="margin:05px;font-family:georgia,serif"> Mín 18º C, Máx 32º C </p>
+			</div>
+			<br> <br> <br>
+			<div id="fechaActual" style="font-style:italic"> Sábado, 07 de Septiembre de 2013 </div>
+			<div id="buscador" class="buscar">
+			
+				<input id="textBuscador" type="text" size="50" style="font-style:italic;height:30px"
+				value="Escriba aqu&iacute; su b&uacute;squeda"
+				onFocus="if (this.value=='Escriba aqu&iacute; su b&uacute;squeda')
+						this.value=''"
+				onBlur="this.value='Escriba aqu&iacute; su b&uacute;squeda'"> </input>
+				<button id="botonBuscador" class="botones" onClick="location.href = 'ResultadoBusqueda.html'"> Buscar </button>
+				
+			</div>
+
+			<div id="login" class="login">
+				<form>
+					<input id="textLogin" type="text" value="Username"
+					onFocus="if (this.value=='Username')
+							this.value=''"
+					onBlur="this.value='Username'"> </input>
+					<input id="textPass" type="text" value="Password"
+					onFocus="if (this.value=='Password')
+							this.value=''"
+					onBlur="this.value='Password'"> </input>
+					<button id="botonLogin" class="botones" onClick="showDiv()">Login</button>
+					<button id="botonRegister" class="botones" onClick="location.href = 'Register.html'">Register</button>
+				</form>
+			</div>
+			
+			<div id="logined" class="logined">
+				<div>¡Bienvenido, 
+				<a href="UserPage.html" id="actualuser" name="actualuser">Nombre de usuario</a>
+				<img src="logout.png" height="15" width="auto" onClick="hideDiv()"> </img>
+				</div>
+			</div>
+		</div>
+
+		<!--Secciones-->
+		<div style="clear:both" class="topic" id="secciones">
+		
+			<button class="seccion" onClick="location.href = 'index.html'"> Inicio </button>
+			<button class="seccion" onClick="location.href = 'Seccion.html'"> Local </button>
+			<button class="seccion" onClick="location.href = 'Seccion.html'"> Nacional </button>
+			<button class="seccion" onClick="location.href = 'Seccion.html'"> Internacional </button>
+			<button class="seccion" onClick="location.href = 'Seccion.html'"> Cultura </button>
+			<button class="seccion" onClick="location.href = 'Seccion.html'"> Espectáculos </button>
+			
+		</div>
+		
+		<!--Parte de la derecha de la página-->
+		<div id="partederecha" style="float:right;width:20%;margin:08px;text-align:justify">
+			<!--Radio-->
+			<div id="radioBisontes" style="padding-bottom:05px;" >
+				<img src="Images/RadioBisontes.png" height="140" width="100%"> </img>
+			</div>
+			
+			<!--Denuncia Ciudadana-->
+			<div id="denuncia" style="padding-bottom:05px;width:100%;overflow:hidden">
+				<div class="topic" align="middle" style="background-color:orange;padding:05px;margin:0;width:100%"> Denuncia Ciudadana </div>
+				
+				<img src="Images/denuncias/denuncia1.jpg" alt="X" height="200" width="100%">
+				<div id="denunciatexto"> 
+					enfksd jfndsjfn ksjnvkdsjvnk j sdnfls djf ljk ndsk jfdf 
+					nsdn fks djf nksd dsfksdn dsfsd kfsd knfk sdjasndcj kasndk jsnlcfda 
+					nfjsdfk jsdkvjd s,jvnk sdjnv kljsdnfljnjnsdljfn
+				</div>
+				<div id="enviadenuncia" align="middle" style="padding:10px;">
+					<a href="#"> ¿Tienes alguna denuncia? Envíala aquí </a>
+				</div>
+			</div>
+			
+			<!--Cartoons-->
+			<div id="cartoons" style="padding-bottom:05px;width:100%;overflow:hidden">
+				<div class="topic" align="middle" style="background-color:orange;padding:05px;margin:0;width:100%"> Cartoons </div>
+				<img src="Images/cartoons/cartoon1.jpg" alt="X" height="200" width="100%">
+			</div>
+		</div>
+		
+		<!--Cuerpo principal de la página-->
+		<div id="noticia" style="float:left;width:78%;">
+			<div id="tituloSeccion" class="topic" style="margin-top:10px;padding:10px 0;font-size:150%" align="middle"> seccion </div>
+			
+			<div style="margin:0 auto;width:90%">
+				<a href="EditarNoticia.html" style="float:right">Editar Noticia</a>
+				
+				<div id="tituloNoticia" style="font-size:180%;padding:20px;font-family:Georgia;font-weight:bold"> Título de la noticia </div>
+				<div id="fechaNoticia" style="font-size:90%;padding-left:20px"> Jueves, 17 de Octubre del 2013 </div>
+				<div id="autorNoticia" style="font-size:90%;padding-left:20px;font-weight:bold"> Por Marisol Gallegos </div>
+
+				<img src="Images/noticias/chibi.jpg"alt="X" style="padding:10px;width:80%;height:auto"> </img>
+
+				<div id="textoNoticia" style="clear:both;padding:10px;width:80%;text-align:justify">
+					Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.<br>
+					Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus. Morbi lorem ante, malesuada in mollis nec, auctor nec massa. Aenean tempus dui eget felis blandit at fringilla urna ultrices. Suspendisse feugiat, ante et viverra lacinia, lectus sem lobortis dui, ultricies consectetur leo mauris at tortor. Nunc et tortor sit amet orci consequat semper. Nulla non fringilla diam.<br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac magna non augue porttitor scelerisque ac id diam. Mauris elit velit, lobortis sed interdum at, vestibulum vitae libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis ligula ut ipsum mattis viverra. Nulla a libero metus. Integer gravida tempor metus eget condimentum. Integer eget iaculis tortor. Nunc sed ligula sed augue rutrum ultrices eget nec odio. Morbi rhoncus, sem laoreet tempus pulvinar, leo diam varius nisi, sed accumsan ligula urna sed felis. Mauris molestie augue sed nunc adipiscing et pharetra ligula suscipit. In euismod lectus ac sapien fringilla ut eleifend lacus venenatis.
+				</div>
+				
+				<video width="80%" height="auto" style="margin:20px 0 50px" controls>
+				<source src="Videos/Christmas.mp4" type="video/mp4">
+				</video>
+			</div>	
+			
+			<div id="comentarios" style="padding:10px;width:90%;margin:0 auto">
+			<!--Zona para escribir comentario-->
+				<input id="username" type="text" size="50" align="top"> </input>
+				<textarea id="micomentario" rows="6" cols="50" style="display:block;margin-top:20px;margin-bottom:30px;"></textarea>
+				<form style="display:inline-block;position:relative;top:-20px"><input type="button" value="Comentar"/></form>
+				<div style="font-size:100%;font-weight:bold;margin-bottom:10px"> Comentarios </div>
+			<!--Otros comentarios-->
+				<section class="comments" style="clear:both">
+				<article class="comment">
+				  <a class="comment-img" href="#non">
+					<img src="anonymous_user.png" alt="" width="50" height="50">
+				  </a>
+				  <div class="comment-body">
+					<div class="text">
+					  <p>Hello, this is an example comment</p>
+					</div>
+					<p class="attribution">by <a href="#non">Joe Bloggs</a> at 14:23pm, 4th Dec 2010</p>
+				  </div>
+				  <div name="likes" style="font-weight:bold;color:white;float:right">15</div>
+				  <img src="check.png" width="20" height="20" style="float:right"></img>
+				</article>
+				  <article class="comment">
+				  <a class="comment-img" href="#non">
+					<img src="anonymous_user.png" alt="" width="50" height="50">
+				  </a>
+				  <div class="comment-body">
+					<div class="text">
+					  <p>This is a much longer one that will go on for a few lines.</p>
+					  <p>It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.</p>
+					</div>
+					<p class="attribution">by <a href="#non">Joe Bloggs</a> at 14:23pm, 4th Dec 2010</p>
+				  </div>
+				  <div name="likes" style="font-weight:bold;color:white;float:right">03</div>
+				  <img src="check.png" width="20" height="20" style="float:right"></img>
+				</article>
+				</section>			
+			</div>			
+		</div>
+		
+		<!--Parte inferior de la página-->
+		<div id="parteinferior" class="parteInferior">
+			<div align="right">
+				<table>
+					<tr> <td> <a href> Quiénes somos </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Publicidad </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Contacto </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle">
+				<table>
+					<tr> <td> Secciones: </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Local </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Nacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Internacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Cultura </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Espectáculos </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle" style="padding:10px">
+				Noticiero Bisontes es un sitio web, producto como proyecto final de la materia de Bases
+				de Datos para Multimedia, de la carrera de Licenciado en Multimedia y Animación Digital,
+				impartida en la Facultad de Ciencias Físico-Matemáticas, en la Universidad Autónoma de 
+				Nuevo León.
+			</div>
+			
+			<div align="left" style="margin-top:35px;">
+				<table> <tr>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Facultad de Ciencias Físico Matemáticas </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Av. Universidad s/n. Ciudad Universitaria, San Nicolás de los Garza, Nuevo León, C.P. 66451 </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Tel 83-29-40-30 </td> </tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

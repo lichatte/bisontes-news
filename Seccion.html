@@ -1,0 +1,256 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<script type="text/javascript" src="CodigoJavaScript.js"></script>
+		<meta http-equiv="Pragma" content="no-cache">
+		<title>Noticias Bisontes - Seccion</title>
+	<head>
+	<body>
+		<!--Parte superior de la página-->
+		<div id="header">
+		
+			<img style="float:left" src="Images/Logo.png" height="200" onClick="location.href = 'index.html'"> </img>
+			<br> <br> <br>
+			<div id="clima">
+				<img id="imagenClima" alt="X" src="Images/clima/cloudy.png" height="80" align="left"> </img>
+				<p id="tempActual" style="margin:05px;font-size:25px;font-family:georgia,serif"> 30º C </p>
+				<p id="MinMax" style="margin:05px;font-family:georgia,serif"> Mín 18º C, Máx 32º C </p>
+			</div>
+			<br> <br> <br>
+			<div id="fechaActual" style="font-style:italic"> Sábado, 07 de Septiembre de 2013 </div>
+			<div id="buscador" class="buscar">
+			
+				<input id="textBuscador" type="text" size="50" style="font-style:italic;height:30px"
+				value="Escriba aqu&iacute; su b&uacute;squeda"
+				onFocus="if (this.value=='Escriba aqu&iacute; su b&uacute;squeda')
+						this.value=''"
+				onBlur="this.value='Escriba aqu&iacute; su b&uacute;squeda'"> </input>
+				<button id="botonBuscador" class="botones" onClick="location.href = 'ResultadoBusqueda.html'"> Buscar </button>
+				
+			</div>
+			<div id="login" class="login">
+				<form>
+					<input id="textLogin" type="text" value="Username"
+					onFocus="if (this.value=='Username')
+							this.value=''"
+					onBlur="this.value='Username'"> </input>
+					<input id="textPass" type="text" value="Password"
+					onFocus="if (this.value=='Password')
+							this.value=''"
+					onBlur="this.value='Password'"> </input>
+					<button id="botonLogin" class="botones" onClick="showDiv()">Login</button>
+					<button id="botonRegister" class="botones" onClick="location.href = 'Register.html'">Register</button>
+				</form>
+			</div>
+			<div id="logined" class="logined">
+				<div>¡Bienvenido, 
+				<a href="UserPage.html" id="actualuser" name="actualuser">Nombre de usuario</a>
+				<img src="logout.png" height="15" width="auto" onClick="hideDiv()"> </img>
+				</div>
+			</div>
+		</div>
+		
+		<!--Secciones-->
+		<div style="clear:both" class="topic" id="secciones">
+		
+			<button class="seccion" onClick="location.href = 'index.html'"> Inicio </button>
+			<button class="seccion" onClick="clickSeccion();location.href = 'Seccion.html'"> Local </button>
+			<button class="seccion" onClick="clickSeccion();location.href = 'Seccion.html'"> Nacional </button>
+			<button class="seccion" onClick="clickSeccion();location.href = 'Seccion.html'"> Internacional </button>
+			<button class="seccion" onClick="clickSeccion();location.href = 'Seccion.html'"> Cultura </button>
+			<button class="seccion" onClick="clickSeccion();location.href = 'Seccion.html'"> Espectáculos </button>
+			
+		</div>
+		
+		<!--Noticias más vistas-->
+		<!--<div id="NoticiasMasVistas">
+			
+			<div id="NoticiasMasVistas1" style="float:left" class="masVisto">
+				<img id="ImgMasVista1" height="200" width="250" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="TextMasVista1" width="20px" onClick="location.href = 'Noticia.html'">
+					blabl abla lb lalm dkf jds k fhndsj fbdn smfh bmhdb fdsjf kjd skjbc xvcxb jvdsa djahnkj daskh fcbdsh kfs 
+					dsf dsln fjsd fnkjsdnfkjs kvhe uhfkhk djnc kjsndkfj k sdvb ksdv
+					sd fhn sdkj fsnd
+				</p>
+			</div>
+			
+			<div id="NoticiasMasVistas2" style="float:left" class="masVisto">
+				<img id="ImgMasVista2" height="200" width="250" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="TextMasVista2" width="20px" onClick="location.href = 'Noticia.html'">
+					blabl ablal blalmdkfj dskfh nd sjfb dn smfhbmhd bfdsj fkjdsk jbcxvc xbjv dsadja hnkj daskh fc b dshkfs
+					dsfd sln fjs d fnk jsdn fkjsk vheuh fkhk djnc kjsndk fjks dvbksdv
+					sdfhn sdkjfsnd
+				</p>
+			</div>
+			
+			<div id="NoticiasMasVistas3" style="float:left" class="masVisto">
+				<img id="ImgMasVista3" height="200" width="250" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="TextMasVista3" width="20px" onClick="location.href = 'Noticia.html'">
+					blabl abla lb lalm dkf jds k fhndsj fbdn smfh bmhdb fdsjf kjd skjbc xvcxb jvdsa djahnkj daskh fcbdsh kfs 
+					dsf dsln fjsd fnkjsdnfkjs kvhe uhfkhk djnc kjsndkfj k sdvb ksdv
+					sd fhn sdkj fsnd
+				</p>
+			</div>
+		</div>-->
+
+		<div id="slider-shadow">
+			<div id="slider">
+				<div id="mask">
+					<ul>
+						<li>
+							<a href="#" title="View my first image link"><img width="100%" src="Images/noticias/chibi.jpg" /></a>
+							<span><h2>Image Caption</h2></span>
+						</li>
+						<li>
+							<a href="#" title="View my second image link"><img width="100%" src="Images/noticias/corgi.jpg" /></a>
+							<span><h2>Image Caption</h2></span>
+						</li>
+						<li>
+							<a href="#" title="View my third image link"><img width="100%" src="Images/noticias/kitten.jpg" /></a>
+							<span><h2>Image Caption</h2></span>
+						</li>
+						<li>
+							<a href="#" title="View my fourth image link"><img width="100%" src="Images/noticias/pigeonz.jpg" /></a>
+							<span><h2>Image Caption</h2></span>
+						</li>
+					</ul>
+				</div>
+				<div id="progress">
+				</div>
+				<div id="overlay">
+				</div>
+				<div id="pause">
+				</div>
+			</div>
+		</div>
+		
+		<!--Parte de la derecha de la página-->
+		<div id="partederecha" style="float:right;width:260px;margin:08px;text-align:justify">
+			<!--Radio-->
+			<div id="radioBisontes" style="padding-bottom:05px;" >
+				<img src="Images/RadioBisontes.png" height="140" width="100%"> </img>
+			</div>
+			
+			<!--Denuncia Ciudadana-->
+			<div id="denuncia" style="padding-bottom:05px;width:100%;overflow:hidden">
+				<div class="topic" align="middle" style="background-color:orange;padding:05px;margin:0;width:100%"> Denuncia Ciudadana </div>
+				
+				<img src="Images/denuncias/denuncia1.jpg" alt="X" height="200" width="100%">
+				<div id="denunciatexto"> 
+					enfksd jfndsjfn ksjnvkdsjvnk j sdnfls djf ljk ndsk jfdf 
+					nsdn fks djf nksd dsfksdn dsfsd kfsd knfk sdjasndcj kasndk jsnlcfda 
+					nfjsdfk jsdkvjd s,jvnk sdjnv kljsdnfljnjnsdljfn
+				</div>
+				<div id="enviadenuncia" align="middle" style="padding:10px;">
+					<a href="#"> ¿Tienes alguna denuncia? Envíala aquí </a>
+				</div>
+			</div>
+			
+			<!--Cartoons-->
+			<div id="cartoons" style="padding-bottom:05px;width:100%;overflow:hidden">
+				<div class="topic" align="middle" style="background-color:orange;padding:05px;margin:0;width:100%"> Cartoons </div>
+				<img src="Images/cartoons/cartoon1.jpg" alt="X" height="200" width="100%">
+			</div>
+		</div>
+		
+		<!--Cuerpo principal de la página-->
+		<div id="seccionNoticias" style="width:690px;float:left">			
+			<div id="tituloSeccion" class="topic" style="padding:10px;font-size:150%" align="middle">Seccion</div>
+			
+			<!--Noticias-->
+			<div id="NoticiaSeccion1" class="PreviewNoticia" style="float:left">
+				<img id="PreviewImg1" height="100" width="150" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto1" onClick="location.href = 'Noticia.html'">blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<div id="NoticiaSeccion2" class="PreviewNoticia" style="float:left">
+				<img id="PreviewImg2" height="100" width="150" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto2" onClick="location.href = 'Noticia.html'">blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<div id="NoticiaSeccion3" class="PreviewNoticia" style="float:left">
+				<img id="PreviewImg3" height="100" width="150" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto3" onClick="location.href = 'Noticia.html'">blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<div id="NoticiaSeccion4" class="PreviewNoticia" style="float:left">
+				<img id="PreviewImg4" height="100" width="150" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto4" onClick="location.href = 'Noticia.html'">blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<div id="NoticiaSeccion5" class="PreviewNoticia" style="float:left">
+				<img id="PreviewImg5" height="100" width="150" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto5" onClick="location.href = 'Noticia.html'">blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<div id="NoticiaSeccion6" class="PreviewNoticia" style="float:left">
+				<img id="PreviewImg6" height="100" width="150" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto6" onClick="location.href = 'Noticia.html'">blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<div id="NoticiaSeccion7" class="PreviewNoticia" style="float:left">
+				<img id="PreviewImg7" height="100" width="150" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto7" onClick="location.href = 'Noticia.html'">blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<div id="NoticiaSeccion8" class="PreviewNoticia" style="float:left">
+				<img id="PreviewImg8" height="100" width="150" alt="X" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto8" onClick="location.href = 'Noticia.html'">blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<!--Segundo tipo de noticias-->
+			<div id="NoticiaSeccion9" class="PreviewNoticia2" style="border-top:1px solid #3e5c7a;width:auto">
+				<img id="PreviewImg9" height="100" width="150" alt="X" style="float:left" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto9" style="padding:30px;margin-left:140px" onClick="location.href = 'Noticia.html'"> blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<div id="NoticiaSeccion10" class="PreviewNoticia2">
+				<img id="PreviewImg10" height="100" width="150" alt="X" style="float:left" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto10" style="padding:30px;margin-left:140px" onClick="location.href = 'Noticia.html'"> blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+			<div id="NoticiaSeccion11" class="PreviewNoticia2">
+				<img id="PreviewImg11" height="100" width="150" alt="X" style="float:left" onClick="location.href = 'Noticia.html'"> </img>
+				<p id="PreviewTexto11" style="padding:30px;margin-left:140px" onClick="location.href = 'Noticia.html'"> blfns dbsjk nks adjnfk asdkm alsdk sa dkmaskd daskm asd </p>
+			</div>
+			
+		</div>
+	
+		<!--Parte inferior de la página-->
+		<div id="parteinferior" class="parteInferior">
+			<div align="right">
+				<table>
+					<tr> <td> <a href> Quiénes somos </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Publicidad </a> </td>
+					<td style="border-left:1px solid #d9a6e3"> <a href> Contacto </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle">
+				<table>
+					<tr> <td> Secciones: </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Local </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Nacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Internacional </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Cultura </a> </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px"> <a href='Seccion.html'> Espectáculos </a> </td> </tr>
+				</table>
+			</div>
+			
+			<div align="middle" style="padding:10px">
+				Noticiero Bisontes es un sitio web, producto como proyecto final de la materia de Bases
+				de Datos para Multimedia, de la carrera de Licenciado en Multimedia y Animación Digital,
+				impartida en la Facultad de Ciencias Físico-Matemáticas, en la Universidad Autónoma de 
+				Nuevo León.
+			</div>
+			
+			<div align="left" style="margin-top:35px;">
+				<table> <tr>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Facultad de Ciencias Físico Matemáticas </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Av. Universidad s/n. Ciudad Universitaria, San Nicolás de los Garza, Nuevo León, C.P. 66451 </td>
+					<td style="border-right:1px solid #d9a6e3;padding:03px;"> Tel 83-29-40-30 </td> </tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
